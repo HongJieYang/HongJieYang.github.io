@@ -459,13 +459,15 @@ footer {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.925);
+
+    align-items: center;
+    justify-content: center;
 }
 
 /* Modal Content */
@@ -548,7 +550,7 @@ footer {
 }
 
 img.demo {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .active,
@@ -578,6 +580,11 @@ img.hover-shadow {
 .thumb4{
     object-fit: contain;
     background-color: rgb(245, 245, 245);
+}
+
+.thumb5{
+    object-fit: contain;
+    background-color: #0d1b2a;
 }
 
 // Thumbnail gallery
@@ -624,17 +631,18 @@ img.hover-shadow {
     }
 }
 
-#thumbnailSlides4 {
+#thumbnailSlides5 {
     display: none;
 
     .demo {
         max-width: 100%;
     }
 
-    // 3 Columns next to each other
+    // 4 Columns next to each other
     .column {
         float: left;
-        width: 33.33%;
+        width: 25.00%;
+        object-fit: contain;
     }
 }
 

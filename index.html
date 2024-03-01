@@ -76,17 +76,17 @@
                     </div>
                     <div class="col-md-8">
                         <p>
-                            Welcome to my website portfolio. I'm a graduate who has applied knowledge
-                            gained from my education into practical projects showcased via this website.
+                            Welcome to my website portfolio. I am current seeking CO-OP opportunties for
+                            2024 Summer.  Below you can see a couple of my projects I've made in a gallery.
                             
                             <br></br>
-                            My main programming language of choice is Python. 
-                            I have familarized myself with CSS, HTML,
-                            Javascript for designing front-end applications. Finally, I am proficient in data extraction,
-                            modelling and classification, especially for the development of machine learning models. 
+                            I am currently focusing on being a full stack developer, with a focus on ReactJS front-end
+                            and a combination of Javascript, ExpressJS and SQL and NoSQL databases for the back-end. Other 
+                            programming languages that I am familar with include Python, MATLAB, and a bit of C# (.NET) and Java. 
 
                             <br></br>
-                            If you have any inquries you can contact me at <b>HongJYang9403@gmail.com</b> or use the contact form below.
+                            If you have any inquries you can contact me at <b>y2896899063@gmail.com</b> or <b>syang5045@conestogac.on.ca</b> 
+                            directly or use the contact form below.
                         </p>
                     </div>
                 </div>
@@ -97,6 +97,19 @@
         <!-- Education Section -->
         <div id="education">
             <h2 class="heading">Education</h2>
+            <div class="education-block">
+                <h3><b>Conestoga College</b></h3>
+                <span class="education-date">2023 - Present</span>
+                <h4><b>Computer Application Developer (4.0 GPA)</b></h4>
+                <h4><b>Relevant Coursework</b></h4>
+                <ul>
+                    <li>Agile Development Course (A+)</li>
+                    <li>Javascript, jQuery with MongoDB (A+)</li>
+                    <li>Database with SQL (A+)</li>
+                    <li>HTML CSS Frontend Design (A+)</li>
+                </ul>
+            </div>
+
             <div class="education-block">
                 <h3><b>McMaster University</b></h3>
                 <span class="education-date">2016 - 2021</span>
@@ -109,6 +122,7 @@
                 </ul>
             </div>
         </div>
+        
         <!-- End of Education Section -->
         
         <!-- Lightbox Gallery -->
@@ -174,6 +188,28 @@
                     </div>
                 </div>
 
+                <div id="gallery5">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/gallery5/image1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/gallery5/image2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/gallery5/image3.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/gallery5/image4.png" style="width:100%">
+                    </div>
+                </div>
+
                 <!-- Next / Previous Controls -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -182,7 +218,8 @@
                 <div class="caption-container">
                     <p id="caption"></p>
                 </div>
-    
+
+
                 <!-- Thumbnail Controls Project 1 -->
                 <div id="thumbnailSlides1" class="thumbnails">
                     <div class="column">
@@ -231,6 +268,25 @@
                         <img class="demo" src="images/gallery3/processed_data.png" onclick="currentSlide(3)" alt="Processed Data of SCG and ECG Waveform">
                     </div>
                 </div>
+
+                <!-- Thumbnail Controls Project 5 -->
+                <div id="thumbnailSlides5" class="thumbnails">
+                    <div class="column">
+                        <img class="demo" src="images/gallery5/image1.png" onclick="currentSlide(1)" alt="Brick Veneer Gallery">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/gallery5/image2.png" onclick="currentSlide(2)" alt="Website Logo">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/gallery5/image3.png" onclick="currentSlide(3)" alt="Brick Veneer Selector Lightbox">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="images/gallery5/image4.png" onclick="currentSlide(4)" alt="Website Checkout Page">
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End of Lighbox Gallery -->
@@ -240,6 +296,32 @@
             <h2 class="heading">Projects</h2>
             <div class="container">
                 <div class="row">
+                    <div class="project shadow-large">
+
+                        <!-- Image -->
+                        <div class="project-image">
+                            <img src="images/gallery5/image1.png" width="480" height="360" class="thumb5" onclick="openModal(5)"/>
+                        </div>
+
+                        <!-- Project Information -->
+                        <div class="project-info">
+                            <h3>3Y Brick Veneer Site</h3>
+                            <ul>
+                                <li>ReactJS</li>
+                                <li>MongoDB</li>
+                                <li>ExpressJS</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <p>
+                                This application is a full-stack website used to help sell my family's brick veneer. It was made using ReactJS front-end
+                                and MongoDB and Express backend. The frontend, the backend, and database server are all hosted online. The stock and 
+                                quotes for orders are sent to and retrieved from the database. 
+                            </p>
+                            <a href="https://github.com/Samyuul/3Y-Brick-Veneer-Site" target="_blank">View Source Code</a>
+                        </div>
+                    </div>
+
                     <div class="project shadow-large">
 
                         <!-- Image -->
@@ -257,7 +339,7 @@
                             </ul>
                             <p>
                                 This application is a real-time webcam predictor for age, gender, and emotions. It leverages existing neural network architecture Vgg16 to 
-                                achieve accuracies of 78.77% (96.01% one off accuracy) for age, 94.85% for gender, and 64.44% for emotions.
+                                achieve accuracies of 78.77% (96.01% one off accuracy) for age, 94.85% for gender, and 64.44% for emotions. (Documentation Available)
                             </p>
                             <a href="https://github.com/HongJieYang/AgeGenderEmotionDetector" target="_blank">View Source Code</a>
                         </div>
@@ -283,6 +365,7 @@
                             <p>
                                 This application scrapes the frontpage of CBC, The Guardian, NBS, and CBS for articles. It then provides a summary of the article using an 
                                 extractive algorithm alongside a list of corresponding keywords. Furthermore, you can filter the articles based on 5 different categories.
+                                (Documentation Available)
                             </p>
                             <a href="https://github.com/HongJieYang/ArticleSummarizerApplication" target="_blank">View Source Code</a>
                         </div>
@@ -343,17 +426,22 @@
         <div id="skills">
             <h2 class="heading">Skills</h2>
             <ul>
+                <li>ReactJS</li>
                 <li>JavaScript</li>
-                <li>Java</li>
                 <li>Embedded C</li>
                 <li>MATLAB</li>
                 <li>MySQL</li>
+                <li>MongoDB</li>
                 <li>Python</li>
                 <li>jQuery</li>
                 <li>OpenCV</li>
                 <li>Keras</li>
                 <li>Dash Plotly</li> 
                 <li>Beautiful Soup</li>
+                <li>Java</li>
+                <li>Office</li>
+                <li>C#</li>
+                <li>.NET</li>
             </ul>
         </div>
         <!-- End of Skills Section -->
@@ -389,10 +477,10 @@
                     <div class="col-sm-5 social">
                         <ul>
                             <li>
-                                <a href="https://github.com/HongJieYang" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="https://github.com/Samyuul/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                             </li>
                             <li>
-                                <a href="https://linkedin.com/in/HongJYang940f" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/samyang9063/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                             </li>
                         </ul>
                     </div>

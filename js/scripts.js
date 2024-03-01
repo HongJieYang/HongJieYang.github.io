@@ -1,14 +1,14 @@
 // Global variables
 var slideIndex = 1; 
 var projectSelect = 0;
-var viewWidths = ['42vw', '52vw', '45vw', '50vw']
+var viewWidths = ['42vw', '52vw', '45vw', 0, '52vw'];
 
 // Open lightbox gallery
 function openModal(n) {
     slideIndex = 1
 
     // Hide header
-    document.getElementById("myModal").style.display = "block";
+    document.getElementById("myModal").style.display = "flex";
     document.getElementById("nav-header").style.zIndex = -10;
 
     projectSelect = n;
@@ -19,7 +19,7 @@ function openModal(n) {
 
     document.body.style.overflow = "hidden";
     document.getElementsByClassName("modal-content")[0].style.maxWidth = viewWidths[n - 1];
-    showSlides(slideIndex)
+    showSlides(slideIndex);
 }
 
 // Close lightbox gallery
@@ -41,7 +41,7 @@ function closeModal() {
         slides[i].style.display = "none";
     }
 
-    document.body.style.overflow = "visible"
+    document.body.style.overflow = "visible";
 }
 
 // Next/previous controls
