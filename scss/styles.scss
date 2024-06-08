@@ -589,6 +589,11 @@ img.hover-shadow {
     background-color: #0d1b2a;
 }
 
+.thumb6{
+    object-fit: contain;
+    background-color: #0d1b2a;
+}
+
 // Thumbnail gallery
 #thumbnailSlides1 {
     display: none;
@@ -648,6 +653,20 @@ img.hover-shadow {
     }
 }
 
+#thumbnailSlides6 {
+    display: none;
+
+    .demo {
+        max-width: 100%;
+    }
+
+    // 4 Columns next to each other
+    .column {
+        float: left;
+        width: 25.00%;
+        object-fit: contain;
+    }
+}
 
 #projects {
     padding: 50px 15px;
